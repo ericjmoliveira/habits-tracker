@@ -7,8 +7,8 @@ import {
   Inter_800ExtraBold
 } from '@expo-google-fonts/inter';
 
+import Routes from './src/routes';
 import Loading from './src/components/loading';
-import Home from './src/screens/home';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -24,7 +24,7 @@ export default function App() {
 
   return (
     <>
-      <Home />
+      <Routes />
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
     </>
   );
