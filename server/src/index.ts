@@ -9,4 +9,4 @@ const port = 5000;
 app.register(cors);
 app.register(appRoutes);
 
-app.listen({ port }, () => console.log(`Server running on port ${port}!`));
+app.listen({ port, host: '0.0.0.0' }, () => console.log(`Server running on port ${port}!`));

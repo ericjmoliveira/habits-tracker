@@ -11,7 +11,7 @@ export default function Header() {
       <Dialog.Root>
         <Dialog.Trigger
           type="button"
-          className="flex items-center gap-3 px-6 py-4 border border-violet-500 font-semibold rounded-lg hover:border-violet-300"
+          className="flex items-center gap-3 px-6 py-4 border border-violet-500 font-semibold rounded-lg hover:border-violet-300 transition-colors focus:outline-none focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-background"
         >
           <BsPlusLg className="text-violet-500" />
           New habit
@@ -23,7 +23,7 @@ export default function Header() {
               Create habit
             </Dialog.Title>
             <NewHabitForm />
-            <Dialog.Close className="absolute right-6 top-6 text-zinc-400 hover:text-zinc-200">
+            <Dialog.Close className="absolute right-6 top-6 text-zinc-400 rounded-lg hover:text-zinc-200 focus:ring-2 focus:outline-none focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-zinc-900">
               <BsXLg />
             </Dialog.Close>
           </Dialog.Content>
