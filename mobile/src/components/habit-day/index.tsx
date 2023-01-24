@@ -22,7 +22,7 @@ export default function HabitDay({ amount = 0, completed = 0, date, ...rest }: H
 
   return (
     <TouchableOpacity
-      className={clsx('m-1 border-2 rounded-lg', {
+      className={clsx('m-1 border-2 bg-zinc-900 border-zinc-800 rounded-lg', {
         'bg-zinc-900 border-zinc-800': completedPercentage === 0,
         'bg-violet-900 border-violet-700': completedPercentage > 0 && completedPercentage < 20,
         'bg-violet-800 border-violet-600': completedPercentage >= 20 && completedPercentage < 40,
